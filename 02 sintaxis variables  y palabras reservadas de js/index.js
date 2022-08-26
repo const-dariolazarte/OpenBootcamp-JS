@@ -10,22 +10,17 @@
 
 - Tu libro favorito (Objeto con propiedades: titulo, autor, fecha */
 
-const myName = 'Dario Lazarte';
-const myAge = 36;
-const isDeveloper = true;
-const dateBirth = new Date(1985, 10, 2);
-const favoriteBook = {
-  titulo: 'Geralt of Rivia',
-  autor: 'Andrzej Sapkowsky',
-  date: 1990
-}
-
 const list = [
-  myName,
-  myAge,
-  isDeveloper,
-  dateBirth,
-  favoriteBook
+  'Dario Lazarte',
+  36,
+  true,
+  new Date(1985, 10, 2),
+  {
+    titulo: 'Geralt of Rivia',
+    autor: 'Andrzej Sapkowski',
+    date: 1990,
+    url: 'https://www.goodreads.com/shelf/show/geralt-of-rivia'
+  }
 ]
 
 console.log(list);
