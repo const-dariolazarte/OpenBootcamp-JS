@@ -10,12 +10,18 @@
 
 // - Una variable que contenga tu peso en kilogramos redondeado hacia abajo
 
-const myHeightInCm = 174;
-const myHeightInM = myHeightInCm / 100;
-const myWeight = 80;
-const myHeightCeil = Math.ceil(myHeightInM);
-const myWeightFloor = Math.floor(myWeight);
+// - Una variable que contenga si "el máximo valor que se puede obtener en Javascript + 1" es igual al máximo valor que se puede obtener en Javascript
 
-console.log(myHeightInM);
-console.log(myHeightCeil);
-console.log(myWeightFloor);
+const height_cm = 174;
+const height_m = height_cm / 100;
+const weight_kg = 80.25;
+
+const heightCeil = Math.ceil(height_m);
+const weightFloor = Math.floor(weight_kg);
+
+const equals = Number.MAX_VALUE + 1 === Number.MAX_VALUE
+
+console.log(height_m);
+console.log(heightCeil);
+console.log(weightFloor);
+console.log(equals);
